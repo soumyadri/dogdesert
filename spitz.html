@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>dogdesserts/Spitz</title>
+    <link rel="icon" href="dog.png">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Montserrat:wght@300;400;600&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="tindog.css">
+    <script src="https://kit.fontawesome.com/1201071337.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body class="bgcolor-dog">
+
+    <nav id="nav_bar" class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color:  #3da4ab;">
+      <a id="brand_name" class="navbar-brand" href="index.html"><img id="brand_img" src="dog.png" alt="brand">dogdesserts</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+           <a class="nav-link active" href="index.html">Home</a></li>
+          <!-- <li class="nav-item ">
+            <a class="nav-link" href="#title-id ">Home</a></li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#features-id ">Features</a></li> -->
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu bgactive" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://doghackathon.simplybook.me/v2/#book">Dog Training</a></a>
+              <!-- <hr class="nav-hr"> -->
+              <a class="dropdown-item" href="https://doghackathon.simplybook.me/v2/#book">Doggy Daycare</a>
+              <!-- <hr class="nav-hr"> -->
+              <a class="dropdown-item" href="https://doghackathon.simplybook.me/v2/#book">Dog Consultant</a>
+              <!-- <hr class="nav-hr"> -->
+            </div>
+          </li>
+          <!-- <li class="nav-item ">
+            <a class="nav-link active" href="#service-pricing-id">Service</a></li> -->
+          <!-- <li class="nav-item ">
+            <a class="nav-link active" href=" ">Updates</a></li> -->
+          <!-- <li class="nav-item ">
+            <a class="nav-link" href=" ">Sign up</a></li> -->
+          <li class="nav-item ">
+            <a class="nav-link active" href="about.html ">About</a></li>
+          <li class="nav-item ">
+            <a class="nav-link active" href="contact.html">SignUp</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="title-id" class="title">
+      <div id="title_container" class="container-fluid">
+        <div class="row">
+          <div id="title_text" class="col-xl-6 col-lg-6 ">
+            <h1 class="h1-dog">Spitz</h1>
+            <a href="https://doghackathon.simplybook.me/v2/#book/service/1/count/1/provider/1/">
+            <button type="button" class="btn btn-dark pad-btn-dog">Buy Now</button></a>
+            <!-- <p>Why do we use it?</p>
+            <p>Where can I get some?</p>
+            <p> Start with 'tindog'</p> -->
+          </div>
+          <div class="col-xl-6 col-log-6  title_dog">
+            <img id="titledog-dog" src="data:image/jpeg;base64,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" alt="dogs">
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <div class="des-dog">
+<p class="desc-dog">●Spitz are a type of DOMESTIC DOG characterized by long, thick, and often white fur, and pointed ears and muzzles.</p>
+<p class="desc-dog">●The tail often curls over the dog's back or droops.</p>
+<p class="desc-dog">■Female  - 35–40 cm (14–16 in)</p>
+<p class="desc-dog">■Coat - Silky texture with curls</p>
+<p class="desc-dog">■Colour - White, Brown</p>
+<p class="desc-dog">●Through SELECTIVE BREEDING, spitz have been developed to help humans in three ways: HUNTING, HERDING, and PULLING SLEDS.</p>
+<h1 class="desc-dog h1desc-dog">Characteristics</h1>
+<p class="desc-dog">●Spitzes are well suited to living in harsh northern climates. </p>
+<p class="desc-dog">●They often have an INSULATING, waterproof UNDERCOAT that is denser than the topcoat to trap warmth. </p>
+<p class="desc-dog">●Small ears help to reduce the risk of FROSTBITE, and thick fur that grows on the paws protects the dogs from sharp ice.</p>
+
+
+<h1 class="desc-dog h1desc-dog">●Additionally,</h1>
+<p class="desc-dog">●Spitzes, with their thick fur, fluffy ruffs, curled tails and small muzzles and ears, have been bred into non-working dogs designed to be companions or LAP DOGS.</p>
+<p class="desc-dog">○Temperament:
+ Spitz dogs are prized for their wonderful temperaments</p>
+<p class="desc-dog">●These dogs love personal attention, and they won't respond well to being ignored or left alone for long periods of time.</p>
+
+<p class="desc-dog">●They are very family-friendly and have a playful spirit. </p><br>
+
+<h1 class="desc-dog h1desc-dog">●Inherited disorders</h1>
+<p class="desc-dog">●as fer as medical issues go, the spirited pooches sometimes have eye issue, including pupillary membranes.</p>
+<p class="desc-dog">●If you acquire a german spitz and ever notice any hints,of eye regularities,whether loss of eye sight.
+○LIFE SPAN : 10-14 YEARS.</p>
+<h1 class="desc-dog h1desc-dog">●FOOD HABITS :</h1>
+<p class="desc-dog">●The Indian Spitz has been bred to eat Curd Rice- An easy to maintain dog. So that will do. Please give it sufficient curds in the rice.</p>
+<p class="desc-dog">●They will eat biscuits. U can also give boiled eggs once a week. remember, they will waste it if given daily. And Try giving them cold water from a fridge. They feel like wolves on a mountain.</p>
+
+    </div>
+
+    <footer id="footer-section-id" class="footer-section">
+      <div class="container-fluid">
+        <a href ="https://www.google.com/search?q=facebook&rlz=1C1AVFC_enIN740IN740&oq=fa&aqs=chrome.1.69i60j69i59l2j46j0j69i60l3.3220j1j7&sourceid=chrome&ie=UTF-8" class="fab fa-facebook-f"id="footer-icons"></a>
+        <!-- <i class="fab fa-twitter"id="footer-icons"></i> -->
+        <a href ="https://twitter.com/explore " class="fab fa-twitter"id="footer-icons"></a>
+
+        <!-- <i class="fab fa-instagram"id="footer-icons"></i> -->
+        <a href ="https://www.instagram.com/ " class="fab fa-instagram"id="footer-icons"></a>
+
+        <!-- <i class="fab fa-snapchat"id="footer-icons"></i> -->
+        <a href =" https://www.snapchat.com/" class="fab fa-snapchat"id="footer-icons"></a>
+
+        <p id="footer-text">
+          <i class="far fa-copyright"></i> Copyright 2020 .....
+        </p>
+        <p id="footer-text " class="footer-head">
+           Connect With Us
+        </p>
+      </div>
+
+    </footer>
+
+  </body>
+
+</html>
